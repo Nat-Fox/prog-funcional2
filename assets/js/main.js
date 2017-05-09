@@ -24,11 +24,8 @@ var productos = [{
     }
 ];
 
-var computadores = [];
-for (var i = 0; i < productos.length; i++) {
-    if (productos[i].tipo === 'computador') {
-        computadores.push(productos[i]);
-    }
-}
+var computadores = productos.filter(function(producto) {
+    return producto.tipo === 'computador';
+});
 
 console.log(computadores);
