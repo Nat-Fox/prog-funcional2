@@ -24,4 +24,11 @@ var productos = [{
     }
 ];
 
-console.log(productos);
+var computadores = [];
+for (var i = 0; i < productos.length; i++) {
+    if (productos[i].tipo === 'computador') {
+        computadores.push(productos[i]);
+    }
+}
+
+console.log(computadores);
